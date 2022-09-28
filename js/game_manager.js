@@ -82,7 +82,7 @@ GameManager.prototype.addRandomTile = function () {
 //my random function
 GameManager.prototype.spongebob = function () {
   if (this.grid.cellsAvailable()) {
-    var value = 2048;
+    var value = 1;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
