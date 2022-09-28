@@ -79,6 +79,16 @@ GameManager.prototype.addRandomTile = function () {
   }
 };
 
+//my random function
+GameManager.prototype.spongebob = function () {
+  if (this.grid.cellsAvailable()) {
+    var value = 2048;
+    var tile = new Tile(this.grid.randomAvailableCell(), value);
+
+    this.grid.insertTile(tile);
+  }
+};
+
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
   if (this.storageManager.getBestScore() < this.score) {
