@@ -71,6 +71,7 @@ GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
     var tempRandom = Math.random();
     var value = tempRandom < 0.9 ? 2048 : (tempRandom > 0.49 && tempRandom < 0.51) ? 4 : 1024;
+    console.log(tempRandom);
     //var value = 2048;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
