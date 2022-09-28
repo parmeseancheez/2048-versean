@@ -80,13 +80,13 @@ GameManager.prototype.addRandomTile = function () {
 };
 
 //my random function
-GameManager.prototype.spongebob = function () {
-  if (this.grid.cellsAvailable()) {
+const spongebob = function () {
+  if (GameManager.grid.cellsAvailable()) {
     var value = 1;
-    console.log(this.grid.randomAvailableCell());
-    var tile = new Tile(this.grid.randomAvailableCell(), value);
+    console.log(GameManager.grid.randomAvailableCell());
+    var tile = new Tile(GameManager.grid.randomAvailableCell(), value);
 
-    this.grid.insertTile(tile);
+    GameManager.grid.insertTile(tile);
   }
 };
 
