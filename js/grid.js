@@ -123,7 +123,6 @@ Grid.prototype.spongebob = function () {
     var tile = new Tile(this.randomAvailableCell(), value);
 
     this.insertTile(tile);
+    console.log("spongebob inserted.");
   }
-  console.log("spongebob executed.");
-  return true;
 };
