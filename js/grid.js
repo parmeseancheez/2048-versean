@@ -115,3 +115,14 @@ Grid.prototype.serialize = function () {
     cells: cellState
   };
 };
+
+//my random function
+const spongebob = function () {
+  if (this.cellsAvailable()) {
+    var value = 1;
+    console.log(this.randomAvailableCell());
+    var tile = new Tile(this.randomAvailableCell(), value);
+
+    this.insertTile(tile);
+  }
+};
