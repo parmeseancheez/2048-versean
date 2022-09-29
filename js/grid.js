@@ -117,12 +117,12 @@ Grid.prototype.serialize = function () {
 };
 
 //my random function
-const spongebob = function () {
-  if (Grid.cellsAvailable()) {
+Grid.prototype.spongebob = function () {
+  if (this.cellsAvailable()) {
     var value = 1;
-    console.log(Grid.randomAvailableCell());
-    var tile = new Tile(Grid.randomAvailableCell(), value);
+    console.log(this.randomAvailableCell());
+    var tile = new Tile(this.randomAvailableCell(), value);
 
-    Grid.insertTile(tile);
+    this.insertTile(tile);
   }
 };
