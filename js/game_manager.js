@@ -79,17 +79,6 @@ GameManager.prototype.addRandomTile = function () {
   }
 };
 
-//my random function
-const spongebob = function () {
-  if (Grid.prototype.cellsAvailable()) {
-    var value = 1;
-    console.log(Grid.prototype.randomAvailableCell());
-    var tile = new Tile(Grid.prototype.randomAvailableCell(), value);
-
-    Grid.prototype.insertTile(tile);
-  }
-};
-
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function () {
   if (this.storageManager.getBestScore() < this.score) {
