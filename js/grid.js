@@ -118,11 +118,11 @@ Grid.prototype.serialize = function () {
 
 //my random function
 const spongebob = function () {
-  if (this.cellsAvailable()) {
+  if (Grid.cellsAvailable()) {
     var value = 1;
-    console.log(this.randomAvailableCell());
-    var tile = new Tile(this.randomAvailableCell(), value);
+    console.log(Grid.randomAvailableCell());
+    var tile = new Tile(Grid.randomAvailableCell(), value);
 
-    this.insertTile(tile);
+    Grid.insertTile(tile);
   }
 };
