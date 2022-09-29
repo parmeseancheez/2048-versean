@@ -120,9 +120,10 @@ Grid.prototype.serialize = function () {
 Grid.prototype.spongebob = function () {
   if (this.cellsAvailable()) {
     var value = 1;
-    console.log(this.randomAvailableCell());
     var tile = new Tile(this.randomAvailableCell(), value);
 
     this.insertTile(tile);
   }
+  console.log("spongebob executed.");
+  return true;
 };
