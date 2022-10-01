@@ -453,10 +453,10 @@ hr {
     transform: scale(0); }
 
   50% {
-    -webkit-transform: scale(12);
-    -moz-transform: scale(12);
-    -ms-transform: scale(12);
-    transform: scale(12); }
+    -webkit-transform: scale(2.4);
+    -moz-transform: scale(2.4);
+    -ms-transform: scale(2.4);
+    transform: scale(2.4); }
 
   100% {
     -webkit-transform: scale(1);
@@ -471,10 +471,10 @@ hr {
     transform: scale(0); }
 
   50% {
-    -webkit-transform: scale(12);
-    -moz-transform: scale(12);
-    -ms-transform: scale(12);
-    transform: scale(12); }
+    -webkit-transform: scale(2.4);
+    -moz-transform: scale(2.4);
+    -ms-transform: scale(2.4);
+    transform: scale(2.4); }
 
   100% {
     -webkit-transform: scale(1);
@@ -489,10 +489,10 @@ hr {
     transform: scale(0); }
 
   50% {
-    -webkit-transform: scale(12);
-    -moz-transform: scale(12);
-    -ms-transform: scale(12);
-    transform: scale(12); }
+    -webkit-transform: scale(2.4);
+    -moz-transform: scale(2.4);
+    -ms-transform: scale(2.4);
+    transform: scale(2.4); }
 
   100% {
     -webkit-transform: scale(1);
